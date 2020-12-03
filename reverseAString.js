@@ -4,13 +4,13 @@
 
 const reverse = (string) => {
 	// THIS METHOD GOES FORWARD OVER THE STRING WITH A FOR LOOP
-	// const solution = [];
-	// const newString = string.split('');
-	// for (let i = 0; i < string.length; i++) {
-	// 	solution.unshift(newString[i]);
-	// }
-	// const newSolution = solution.join('');
-	// return newSolution;
+	const solution = [];
+	const newString = string.split('');
+	for (let i = 0; i < string.length; i++) {
+		solution.unshift(newString[i]);
+	}
+	const newSolution = solution.join('');
+	return newSolution;
 	// THIS METHOD GOES BACKWARD WITH THE FOR LOOP
 	// CONCATING TO A NEW STRING
 	// var solution = '';
