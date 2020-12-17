@@ -29,3 +29,10 @@ const subArraySum = (nums, k) => {
 };
 
 console.log(subArraySum([1, 2, 3], 3));
+
+//// 1 - count 0
+//// 1 + 2 - count 1
+//// 1 + 3 - count 1
+//// 2 - count 1
+//// 2 + 3 - count 1
+//// 3 - count 2
