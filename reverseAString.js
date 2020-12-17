@@ -23,4 +23,12 @@ const reverse = (string) => {
 	// return solution;
 };
 
-console.log(reverse('chase'));
+const reverse1 = (string) => {
+	let solution = '';
+	for (let i = string.length - 1; i >= 0; i--) {
+		solution += string[i];
+	}
+	return solution;
+};
+
+console.log(reverse1('chase'));

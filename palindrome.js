@@ -5,15 +5,14 @@
 // RETURNS TRUE OR FALSE
 
 const isPalindrome = (string) => {
-	var reverse = '';
+	let reverse = '';
 
 	for (let i = string.length - 1; i >= 0; i--) {
 		reverse += string[i];
 	}
-	console.log(reverse);
 	if (reverse === string) {
 		return true;
 	} else return false;
 };
 
-console.log(isPalindrome('cigar? toss it in a can. it is so tragic'));
+console.log(isPalindrome('chase'));

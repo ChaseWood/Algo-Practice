@@ -16,10 +16,16 @@
 // -107 <= k <= 107
 
 const subArraySum = (nums, k) => {
-	const count = 0;
-	nums.forEach((e) => {
-		if (e + e[0] == k) console.log(e);
-	});
+	let count = 0;
+	for (let i = 0; i < nums.length; i++) {
+		let sum = nums[i];
+		if (sum == k) count++;
+		for (let j = i + 1; j < nums.length; j++) {
+			sum += nums[j];
+			if (sum == k) count++;
+		}
+	}
+	return count;
 };
 
 console.log(subArraySum([1, 2, 3], 3));
