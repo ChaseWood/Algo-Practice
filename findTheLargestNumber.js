@@ -15,4 +15,14 @@ const largestNumber = (array) => {
 	return largest;
 };
 
-console.log(largestNumber([1, 2, 5, 10]));
+const largerNumber = (a) => {
+	let large = a[0];
+	for (let i = 0; i < a.length; i++) {
+		if (a[i] > large) {
+			large = a[i];
+		}
+	}
+	return large;
+};
+
+console.log(largerNumber([1, 2, 5, 10]));
