@@ -11,13 +11,16 @@ const reverse = (string) => {
 	}
 	const newSolution = solution.join('');
 	return newSolution;
+
 	// THIS METHOD GOES BACKWARD WITH THE FOR LOOP
 	// CONCATING TO A NEW STRING
+
 	// var solution = '';
 	// for (let i = string.length - 1; i >= 0; i--) {
 	// 	solution += string[i];
 	// }
 	// return solution;
+
 	// THIS METHOD USES THE ARRAY METHODS SPLIT, REVERSE AND JOIN
 	// const solution = string.split('').reverse().join('');
 	// return solution;

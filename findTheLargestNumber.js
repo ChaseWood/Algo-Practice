@@ -6,10 +6,10 @@
 // replace number in largest sum with
 
 const largestNumber = (array) => {
-	let largest = array[0];
-	array.forEach((e) => {
-		if (e > largest) {
-			largest = e;
+	let largest = 0;
+	array.forEach((element) => {
+		if (element > largest) {
+			largest = element;
 		}
 	});
 	return largest;
